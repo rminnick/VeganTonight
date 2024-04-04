@@ -62,10 +62,23 @@
 		<!-- Recipe cards go here -->
 	</div>
 	<div class="newsletter">
-		<h4>Subscribe to Our Newsletter</h4>
-		<p>Get the latest recipes directly to your inbox.</p>
-		<input type="email" placeholder="Enter your email">
-		<button>Subscribe</button>
+		<h4>Subscribe to Our Weekly Newsletter</h4>
+		<p>Get our weekly newsletter featuring a new recipe directly to your inbox each Sunday so you can try cooking Vegan Tonight!</p>
+		<form
+		  action="https://buttondown.email/api/emails/embed-subscribe/vegantonight"
+		  method="post"
+		  target="popupwindow"
+		  onsubmit="window.open('https://buttondown.email/vegantonight', 'popupwindow')"
+		  class="embeddable-buttondown-form"
+		>
+		  <label for="bd-email">Enter your email</label>
+		  <input type="email" name="email" id="bd-email" />
+		  
+		  <input type="submit" value="Subscribe" />
+		  <p>
+			<a href="https://buttondown.email/refer/vegantonight" target="_blank">Powered by Buttondown.</a>
+		  </p>
+		</form>
 	</div>
 	<footer>
 		<p>Contact us at info@vegantonight.com</p>
